@@ -27,3 +27,13 @@ const arrayMap = function(array) {
 }
 
 console.log(arrayMap(Animals))
+
+
+const nameArray = function(array) {
+    return array.filter(arrayCell => arrayCell.species !== "cat")
+        .map(arrayCell => arrayCell.name + " is a " + arrayCell.species)
+
+
+}
+
+console.log(nameArray(Animals))
