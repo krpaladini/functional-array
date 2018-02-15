@@ -21,3 +21,8 @@ function dogFilter(array) {
 }
 
 console.log(dogFilter(Animals));
+
+
+const pupFilter = Animals.filter(arrayCell => arrayCell.species === "dog")
+
+console.log(pupFilter)

@@ -7,22 +7,23 @@ const Animals = [
     { name: "Jimmy", species: "fish" }
 ]
 
-const animalMap = function(array) {
-    let animalMapArray = []
-    for (let i = 0; i < array.length; i++) {
-        animalMapArray.push(array[i].name);
+// const animalMap = function(array) {
+//     let animalMapArray = []
+//     for (let i = 0; i < array.length; i++) {
+//         animalMapArray.push(array[i].name);
 
-    }
-    return animalMapArray
+//     }
+//     return animalMapArray
 
+// }
+
+// let animalNames = animalMap(Animals)
+// console.log(animalNames)
+
+
+
+const arrayMap = function(array) {
+    return array.map(arrayCell => (arrayCell.name))
 }
 
-
-let animalNames = animalMap(Animals)
-console.log(animalNames)
-
-
-const animalArray = []
-const arrayMap = Animals.map(arrayCell => animalArray.push(arrayCell.name))
-
-console.log(animalArray)
+console.log(arrayMap(Animals))
