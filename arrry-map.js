@@ -20,3 +20,9 @@ const animalMap = function(array) {
 
 let animalNames = animalMap(Animals)
 console.log(animalNames)
+
+
+const animalArray = []
+const arrayMap = Animals.map(arrayCell => animalArray.push(arrayCell.name))
+
+console.log(animalArray)
