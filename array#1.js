@@ -23,6 +23,6 @@ function dogFilter(array) {
 console.log(dogFilter(Animals));
 
 
-const pupFilter = Animals.filter(arrayCell => arrayCell.species === "dog")
+const pupFilter = Animals.filter(cell => cell.species === "dog")
 
 console.log(pupFilter)
